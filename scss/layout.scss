@@ -1,0 +1,93 @@
+#projects .section {
+  width: 100%;
+  overflow-x:hidden;
+  overflow-y: visible;
+  > h2 {
+    position: relative;
+    margin: 15px 0;
+    line-height: 20px;
+    padding-left: 28px;
+    font-size: 13px;
+    color:$pink;
+    img.icon{
+      display: block;
+      width: 20px;
+      height: 20px;
+
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -10px;
+    }
+  }
+  .card-container {
+    width: 810px;
+    letter-spacing: -4px;
+    position: relative;
+    margin-top: -20px;
+    .card {
+      display: inline-block;
+      vertical-align: top;
+      letter-spacing: normal;
+      margin: 20px 23px 0 0;
+      width:226px;
+      background:$purple;
+      color:white;
+      cursor: pointer;
+      border: 1px solid #e6e6e6;
+
+      &:hover {
+        background:#00A8C8;
+
+        .thumbnail-container:after {
+          visibility: visible;
+        }
+        .card-info {
+            border-color:#006D9E;
+        }
+      }
+      .thumbnail-container {
+        height: 168px;
+        background:#E6E6E6;
+
+        &:after {
+          display: block;
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: url('white-25.png');
+          background: rgba(white,.25);
+          visibility: hidden;
+        }
+      }
+      .card-info {
+        padding: 10px;
+        height: 80px;
+        position: relative;
+        border-bottom: 3px solid #43286d;
+        .launch-date {
+          position: absolute;
+          width: 100%;
+          padding:10px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          font-size: 12px;
+        }
+        h4 {
+          margin: 0;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  &.no-results {
+    > h2 {
+      font-size:2em;
+      padding-left:0;
+    }
+  }
+}

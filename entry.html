@@ -1,0 +1,27 @@
+
+
+
+
+<div id="projects">
+
+
+</div>
+
+<script src="http://content.mercer.com/SolutionsBuyers/spservices.js"></script>
+<script src="http://content.mercer.com/SolutionsBuyers/markdown.js"></script>
+<script>
+var App = {};
+$(document).ready(function(){
+  var date = new Date().getTime();
+  $('head').append("<style>@import url('/KnowledgeManagement/Development/main.css?v="+date+"');</style>");
+
+
+
+    var script = document.createElement("script");
+    script.src = "/KnowledgeManagement/Development/main_script.js?v="+date;
+    script.type = "text/javascript";
+    document.getElementsByTagName("head")[0].appendChild(script);
+});
+
+</script>
+<!--<script src="/KnowledgeManagement/Development/main_script.js"></script>-->

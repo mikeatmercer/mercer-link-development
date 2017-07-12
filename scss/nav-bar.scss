@@ -1,0 +1,74 @@
+
+#nav-bar {
+  height: 45px;
+
+}
+
+#nav-bar .selector-box {
+  position: absolute;
+  left: 20px;
+  top: 14px;
+}
+#nav-bar .selector-box .select-text {
+  height: 16px;
+  line-height: 16px;
+  padding-left: 24px;
+  position: relative;
+  color:white;
+  padding-right: 15px;
+  &:after {
+    display: block;
+    content:'';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 7px;
+    margin-top:-4.5px;
+    background: url('down-icon.png');
+  }
+}
+#nav-bar .selector-box .select-text .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background:white;
+}
+#nav-bar .selector-box .select-text .icon:before, #nav-bar .selector-box .select-text .icon:after {
+  position: absolute;
+  display:block;
+  content:'';
+}
+#nav-bar .selector-box .select-text .icon:before {
+  width: 4px;
+  height: 16px;
+  border: 1px solid $nav-bg;
+  border-width: 0 1px;
+  left:5px;
+  top: 0;
+}
+#nav-bar .selector-box .select-text .icon:after {
+  left: 0;
+  top: 5px;
+  width: 16px;
+  height: 4px;
+  border: 1px solid $nav-bg;
+  border-width: 1px 0;
+}
+#nav-bar .selector-box select {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity:0;
+  cursor:pointer;
+}
+#nav-bar a.archived {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: #999 !important;
+}

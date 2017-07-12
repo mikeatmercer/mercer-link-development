@@ -1,0 +1,264 @@
+
+/*MODAL*/
+#dev-modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index:9999;
+  background: url('black-70.png');
+  background:rgba(black, .7);
+  text-align: center;
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom:0;
+  }
+}
+#dev-modal .shim, #dev-modal > .content {
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  vertical-align: middle;
+}
+#dev-modal > .content {
+  background: white;
+  text-align: left;
+  width: 690px;
+}
+#dev-modal > .content .inner {
+
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+#dev-modal > .content button.close{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: white;
+  width: 28px;
+  height: 28px;
+  background:url('close-button.png');
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor:pointer;
+}
+#dev-modal .shim {
+  width: 0;
+}
+
+#projects .fieldsection  {
+  width: 100%;
+  overflow-x:hidden;
+  overflow-y:visible;
+}
+#projects .fieldsection .card-container {
+  width: 1000px;
+}
+#dev-modal > .content {
+  /*
+  &:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 190px;
+    background:#e6e6e6;
+    display: block;
+    content: '';
+  }
+  */
+  h2.title {
+    padding: 20px;
+    padding-right: 70px;
+    color: white;
+    font-size: 30px;
+    line-height: 32px;
+    background:$purple;
+  }
+}
+
+#dev-modal .content .inner {
+  position: relative;
+  .bg {
+    position: relative;
+    &:before {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 28%;
+      background:#e6e6e6;
+      display: block;
+      content: '';
+
+    }
+     * {
+      position: relative;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+
+  .meta {
+    float:right;
+    width: 28%;
+    >img {
+      width: 100%;
+      display:block;
+      border-bottom:3px solid $purple;
+    }
+    .meta-wrap {
+      text-align: center;
+      padding: 15px;
+      a.cta {
+        display: inline-block;
+        background:$pink;
+        padding: 5px;
+        color:white !important;
+        text-decoration: none;
+        font-size:12px;
+        margin-bottom: 10px;
+        line-height:1.1em;
+      }
+      .meta-item {
+        margin-bottom:15px;
+        text-align: left;
+        h4 {
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+        a {
+          display: block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+  }
+  .main {
+    width:72%;
+    float:left;
+    padding: 20px;
+    .description {
+      padding-bottom: 15px;
+      h1, h2,h3,h4,h5 {
+        margin-bottom:.5em;
+      }
+      h1 {
+        font-size:2em;
+      }
+      h2 {
+        font-size:1.5em;
+      }
+      h3 {
+        font-size:1.25em
+      }
+      h4,h5 {
+        font-size:1.1em;
+      }
+      p,ol,ul {
+        margin-bottom: 1em;
+      }
+      ol,ul {
+        margin-left:15px;
+        li {
+          margin-bottom:.25em;
+        }
+      }
+      ul, ul li {
+        list-style: disc;
+      }
+      ol, ol li {
+        list-style-type: decimal;
+      }
+
+    }
+  }
+  .col {
+    float: left;
+    width: 50%;
+    padding: 0 0 0 25px;
+    &.first {
+      padding: 0 25px 0 0;
+    }
+    h4 {
+      text-transform: uppercase;
+      color:$purple;
+      border-bottom: 3px solid $purple;
+      padding-bottom:5px;
+      margin-bottom:5px;
+      font-size: 16px;
+    }
+    > .section {
+      margin-bottom: 25px;
+      > ul li {
+        margin-bottom: .25em;
+      }
+      &.team {
+        > ul li {
+          margin: 20px 0;
+          position: relative;
+          &.shorten {
+            margin: 10px 0;
+          }
+          &.blank {
+            height: 45px;
+            &:before, &:after {
+              position: absolute;
+              display: block;
+              content:'';
+              background: #e6e6e6;
+            }
+            &:before {
+              left: 0;
+              top:0;
+              width: 45px;
+              height:45px;
+            }
+            &:after {
+              left:55px;
+              top: 13px;
+              width: 90px;
+              height:13px;
+            }
+          }
+          a {
+            display:block;
+            padding-left: 55px;
+            &:before {
+              display: inline-block;
+              height: 45px;
+              width: 0;
+              content: '';
+              vertical-align: middle;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+             span.name {
+              vertical-align: middle;
+            }
+            .cover-image-container {
+              width: 45px;
+              height: 45px;
+              position: absolute;
+              left: 0;
+              top:0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+}

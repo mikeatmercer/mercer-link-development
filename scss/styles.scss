@@ -1,0 +1,101 @@
+#MSO_ContentTable {
+  width: 730px !important;
+}
+#MSO_ContentTable .ms-WPBody, #_invisibleIfEmpty {
+  padding: 0 !important;
+}
+#MSO_ContentTable .ms-WPBody {
+  width: 730px;
+  margin: 0 auto;
+}
+.ms-PartSpacingVertical {
+  margin: 0 !important;
+}
+.dev_clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+#dev-modal *, #dev-top-section *{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cover-image-container {
+  position: relative;
+  overflow: hidden;
+  display:block;
+}
+.cover-image-container > img {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+  border: 0;
+  max-width: none !important;
+  max-height: none !important;
+  zoom: 100%;
+  height: auto;
+  width: auto;
+}
+
+
+/*TOP SECTION */
+#dev-top-section {
+  position: relative;
+}
+
+#dev-top-section > * {
+  position: relative;
+  z-index: 1;
+}
+#dev-top-section:before, #dev-top-section:after {
+  display: block;
+  content:'';
+  position: absolute;
+}
+#dev-top-section:before {
+  left: 0;
+  bottom: 0;
+  width:100%;
+  height: 45px;
+  background: $nav-bg;
+}
+#dev-top-section:after {
+  right: 0;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  width:260px;
+  background: url(top-triangle.png) 0 95px no-repeat;
+}
+#dev-top-section .main-content {
+  padding: 10px 10px 20px 10px;
+}
+#dev-top-section .main-content .main-copy {
+  width: 375px;
+  float: left;
+}
+#dev-top-section .main-content .main-copy p {
+  margin-top: 1em;
+}
+#dev-top-section .main-content .main-copy p:first-child {
+  margin-top: 0;
+}
+#dev-top-section .main-content .right-content {
+  float: right;
+  width: 170px;
+  h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px !important;
+    letter-spacing: .170em;
+    margin-bottom: 5px;
+  }
+  ul {
+    line-height: 1.5em;
+  }
+}
+#dev-top-section .main-content .right-content h3 {
+
+}
